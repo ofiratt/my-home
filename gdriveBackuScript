@@ -1,9 +1,9 @@
 
 ###### install gupload: https://github.com/labbots/google-drive-upload
-cd /media/dima/RouterHDD/backups
+cd /media/ofir/RouterHDD/backups
 dt=`date +%d-%m-%Y_%H-%M-%S`
 filename="backup_$dt.tar.gz"
 export GZIP=-9
-sudo tar -cvf "$filename" /home/dima/docker-mounts/
+sudo tar -cvf "$filename" /home/ofir/docker-mounts/
 folder_id="1BjvdQCoRtbvcgmdrWFKRh0tZXPqP3LJE"
-/home/dima/.google-drive-upload/bin/gupload --config /home/dima/.googledrive.conf -r "$folder_id" "$filename"
+/home/ofir/.google-drive-upload/bin/gupload --config /home/ofir/.googledrive.conf -r "$folder_id" "$filename"
